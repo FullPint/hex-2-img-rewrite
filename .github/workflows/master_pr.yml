@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    name: Test on node ${{ matrix.python-version }} and ${{ matrix.os }}
+    name: Test on python- ${{ matrix.python-version }} and operating system ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 4
